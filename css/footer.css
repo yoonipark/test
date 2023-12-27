@@ -29,6 +29,25 @@ footer {
   transform: scale(0.8);
 }
 
+@keyframes icons-floating {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .footer-icon_img {
   width: 30px;
+}
+
+.footer-icons:hover {
+  animation: 2s icons-floating;
 }
