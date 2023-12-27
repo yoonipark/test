@@ -47,7 +47,7 @@ main {
 }
 
 .wirt-btn {
-  background-color: #fe6f0f;
+  background-color: var(--button-primary);
   color: white;
   padding: 10px 15px 10px 15px;
   font-size: 15px;
@@ -56,4 +56,10 @@ main {
   bottom: 120px;
   right: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.wirt-btn:hover {
+  background-color: var(--button-hover);
 }
