@@ -66,7 +66,11 @@ def signup(id:Annotated[str,Form()],
            passwrod:Annotated[str,Form()],
            name:Annotated[str,Form()],
            email:Annotated[str,From()]):
-    print(id, passwrod)
+    cur.execute(f"""
+                INSERT INTO users(id,name,email,password)
+                VALUES('{id}', '{name}','{email}','{password}')
+                """)
+    con.commit()
     return '200'
 
 
